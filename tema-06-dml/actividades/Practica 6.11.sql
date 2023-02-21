@@ -97,56 +97,74 @@ FROM
     empleados emp ON emp.departamento_id = dep.id
 GROUP BY emp.departamento_id;
 
-# 8. 
+# 8. Obtener la siguiente información:
+# a. id, NSS de la tabla empleados
+# b. Nombre del empleado
+# c. Número total de beneficiarios
 
 
 
-# 9. 
+# 9. Mostrar el número de beneficiarios de cada departamento (intervienen las tablas Empleados, Departamento y Dependientes). Mostrará la siguiente información.
+# a. id de Departamento 
+# b. Nombre del Departamento
+# c. Función de Agregación. Número de Beneficiarios
 
 
 
-# 10. 
+# 10. Obtener el número de horas acumuladas en cada proyecto, mostrando la siguiente información:
+# a. Id de Proyecto
+# b. nombre de Proyecto
+# c. Nombre de Departamento
+# d. Función Agregación SUM a partir de empleados_proyecto
 
 
 
-# 11. 
+# 11. Mostrar el número de horas acumuladas por cada trabajador:
+# a. empleado_id de empleado_proyecto
+# b. Función de Agregación correspondiente
 
 
 
-# 12. 
+# 12. Mostrar el número de horas acumuladas por cada trabajador en cada proyecto. Mostrar a. id de empleado_proyecto
+# b. IdProyecto de trabaja_en
+# c. Función de agregación correspondiente
 
 
 
-# 13. 
+# 13. Mostrar el número de horas acumuladas por cada trabajador en cada proyecto pero mostrando:
+# a. empleado_id de empleado_proyecto
+# b. Nombre de Empleado
+# c. Apellidos de Empleado
+# d. proyecto_id de empleado_proyecto
 
 
 
-# 14. 
+# 14. Misma consulta anterior pero mostrando la columna Descripción del Proyecto
 
 
 
-# 15. 
+# 15. Obtener el sueldo medio de los empleados del departamento  3. Realizar este ejercicio sin cláusula WHERE. 
 
 
 
-# 16. 
+# 16. Obtener el mismo ejercicio anterior pero usando la cláusula HAVING con GROUP BY
 
 
 
-# 17. 
+# 17. Obtener el sueldo medio, sueldo máximo y sueldo mínimo de los empleados del departamento 1 y 2. Mostrar las columnas id del departamento y las correspondientes funciones de agregación.
 
 
 
-# 18. 
+# 18. Mostrar el id de departamento en los que el número total de horas trabajadas sea superior o igual a 50.
 
 
 
-# 19. 
+# 19. Obtener aquellos departamentos en los que el salario medio de sus empleados sea superior a 40000. Mostrar número de departamento y salario medio. 
 
 
 
-# 20. 
+# 20. Obtener el salario medio por año de nacimiento, pero mostrar sólo aquellos en los que el salario medio sea superior a 45000. Columnas Año, Salario Medio y Número de Empleados. 
 
 
 
-# 21. 
+# 21. Número de beneficiarios por sexo.
