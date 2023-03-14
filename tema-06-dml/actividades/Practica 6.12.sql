@@ -136,9 +136,63 @@ FROM
 WHERE
     YEAR(v.fecha) = 2014
 GROUP BY c.id
-ORDER BY suma_importes DESC
+ORDER BY suma_importes DESC;
 
 # 8. Se desea obtener el volumen total de ventas por Editorial
+
+SELECT 
+    e.id,
+    e.nombre,
+    COUNT(v.id) num_ventas,
+    SUM(v.importe_total) suma_importes
+FROM
+    editoriales e
+        INNER JOIN
+    libros l ON l.editorial_id = e.id
+        INNER JOIN
+    lineasventas lv ON lv.libro_id = l.id
+        INNER JOIN
+    ventas v ON lv.venta_id = v.id
+GROUP BY e.id
+ORDER BY suma_importes DESC;
+
+# 9. Obtener una vista llamada ventas_editoriales a partir del script anterior.
+
+CREATE OR REPLACE VIEW ventas_editoriales AS
+    SELECT 
+        e.id,
+        e.nombre,
+        COUNT(v.id) num_ventas,
+        SUM(v.importe_total) suma_importes
+    FROM
+        editoriales e
+            INNER JOIN
+        libros l ON l.editorial_id = e.id
+            INNER JOIN
+        lineasventas lv ON lv.libro_id = l.id
+            INNER JOIN
+        ventas v ON lv.venta_id = v.id
+    GROUP BY e.id
+    ORDER BY suma_importes DESC;
+    
+# 10. Insertar un libro con datos válidos en la tabla libros a partir de los requisitos mencionados.
+
+# insert into editoriales (id, nombre, direccion, poblacion, provincia_id, c_postal, nif, telefono, movil, email, web, contacto) values (5,'Alfaguara','Calle Torrelaguna, 60','Madrid',28,'28043','A0818624X','917449060','917449224','alfaguara@santillana.es','http://www.alfaguara.com/es/', 'Isidoro Moreno');
+
+insert into libros values (null, '9788448180833', '9788888199586', 'Introducción a la estadística y matemáticas orientadas al desarrollo de aplicaciones web', 1, 5, 15.00, 20.00, 15, 1, 25, '2019-05-13', default, default);
+
+# 11. Insertar los registros adecuados en la tabla Libros_temas, teniendo en cuenta que el libro anterior es novela, ciencia y astronomía
+
+insert into libros_temas (libro_id, tema_id) values (20, 3), (20, 7), (20, 9);
+
+# 12. 
+
+delete from ventas where id = 12;
+
+insert into ventas values (null, 7, '2023-09-12', 226.29, 47.53, 273.81, default, default);
+
+insert into lineasventas values (null, 12, 1, 4, 0.210, 2, 30.81, 61.62, default, default), (null, 12, 2, 2, 0.210, 2, 30.60, 61.20, default, default), (null, 12, 3, 3, 0.210, 3, 34.49, 103.47, default, default); 
+
 
 
 
