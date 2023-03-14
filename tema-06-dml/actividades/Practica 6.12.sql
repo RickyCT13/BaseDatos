@@ -27,7 +27,7 @@ FROM
     ventas v
         INNER JOIN
     clientes c ON v.cliente_id = c.id
-HAVING YEAR(v.fecha) = 2014
+WHERE YEAR(v.fecha) = 2014
 ORDER BY v.importe_total DESC
 LIMIT 3;
 
@@ -49,7 +49,7 @@ FROM
     editoriales e ON l.editorial_id = e.id
 WHERE
     YEAR(l.fecha_edicion) = 2011
-HAVING l.stock BETWEEN 10 AND 20
+AND l.stock BETWEEN 10 AND 20
 ORDER BY l.id ASC;
 
 # 4. Mostrar detalles de los libros relacionadas con la temática PHP y Bases de Datos, además el precio de venta sea inferior a 30 €
@@ -125,7 +125,7 @@ ORDER BY l.id ASC;
 SELECT 
     c.id,
     c.nombre,
-    COUNT(*) numero_ventas,
+    COUNT(v.id) numero_ventas,
     MAX(v.importe_total) importe_máximo,
     MIN(v.importe_total) importe_minimo,
     SUM(v.importe_total) suma_importes
