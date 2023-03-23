@@ -1,0 +1,30 @@
+<regcorredores>
+<Nombre>Diego</Nombre>
+<Apellidos>Moreno García</Apellidos>
+<Ciudad>Ubrique</Ciudad>
+<FechaNacimiento>1960-6-5</FechaNacimiento>
+<Sexo>H</Sexo>
+<Edad>null</Edad>
+<Categoria_id>1<Ccateogoria_id>
+<Club_id>1</Club_id>
+</regcorredores>
+<regcorredores>
+<Nombre>Sergio</Nombre>
+<Apellidos>Gallardo Galindo</Apellidos>
+<Ciudad>Ubrique</Ciudad>
+<FechaNacimiento>1960-6-5</FechaNacimiento>
+<Sexo>H</Sexo>
+<Edad>null</Edad>
+<Categoria_id>3</Categoria_id>
+<Club_id>1</Club_id>
+</regcorredores>
+<regcorredores>
+<Nombre>Marta</Nombre>
+<Apellidos>Panal Valle</Apellidos>
+<Ciudad>Ubrique</Ciudad>
+<FechaNacimiento>1960-6-5</FechaNacimiento>
+<Sexo>M</Sexo>
+<Edad>null</Edad>
+<Categoria_id>3</Categoria_id>
+<Club_id>1</Club_id>
+</regcorredores>
