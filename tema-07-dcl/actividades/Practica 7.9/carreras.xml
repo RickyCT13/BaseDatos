@@ -1,0 +1,16 @@
+<carreras>
+    <carrera>
+        <id>5</id>
+        <Nombre>Atravesando La Línea</Nombre>
+        <Ciudad>La Línea</Ciudad>
+        <Distancia>16500</Distancia>
+        <MesCelebracion>5</MesCelebracion>
+    </carrera>
+    <carrera>
+        <id>6</id>
+        <Nombre>Atando la Soga</Nombre>
+        <Ciudad>Villamartín</Ciudad>
+        <Distancia>11650</Distancia>
+        <MesCelebracion>4</MesCelebracion>
+    </carrera>
+</carreras>

@@ -69,16 +69,15 @@ FROM
 
 /*Realiza una consulta que muestre los corredores que cumplen año el mes que viene, teniendo en cuenta la fecha y hora actual. Mostrar las mismas columnas que en el apartado anterior.*/
 
-select * from vistaEj4 where month(vistaEj4.fecha_nac) = month(current_date()) + 1;
-/* Aunque el comando funcione, no muestra registros ya que puede no haber gente que cumpla años el mes que viene*/
+select * from vistaEj4 where vistaEj4.fecha_nac = vistaEj4.fecha_nac + interval 1 month;
 
 /*Realiza una consulta que muestre los corredores que cumplen año la semana que viene, teniendo en cuenta también la fecha y hora actual.*/
 
-
+select * from vistaEj4 where vistaEj4.fecha_nac = vistaEj4.fecha_nac + interval 1 week;
 
 /*Mostrar aquellos corredores que nacieron en el 2 cuatrimestre del año. Mostrar mismos detalles que los apartados anteriores.*/
 
-
+select * from vistaEj4 where quarter(vistaEj4.fecha_nac) = 2;
 
 /* ----------------- */
 
@@ -86,11 +85,11 @@ select * from vistaEj4 where month(vistaEj4.fecha_nac) = month(current_date()) +
 
 /* 5. Añadir 5 registros con la llegada a meta en la Maraton de Sevilla correspondiente a los corredores 2, 3, 4 y 5. Además se supone que el primero en llegar a la meta fue el corredor 1 cuyo registro ya está arriba. Poner la columna llegada a vuestro criterio. */
 
-
+insert into registros values (null, 2, 2, '2023-04-11 10:00:00.000000', '2023-04-11 10:52:27.123432', '00:52:27.123432'),(null, 2, 3, '2023-04-11 10:00:00.000000', '2023-04-11 10:41:05.233341', '00:41:05.233341'),(null, 2, 4, '2023-04-11 10:00:00.000000', '2023-04-11 10:39:55.334123', '00:39:55.334123'),(null, 2, 5, '2023-04-11 10:00:00.000000', '2023-04-11 10:38:55.143234', '00:38:55.143234');
 
 /* 6. Actualizar la columna tiempoInvertido a partir de las columna salida y llegada. Sólo maratón de Sevilla. */
 
-update registros set TiempoInvertido = timediff(Llegada, Salida);
+update registros set TiempoInvertido = timediff(Llegada, Salida) where carrera_id = 2;
 
 
 /* 7. Mostrar la clasificación de la Maratón de Sevilla (id = 2) con los siguientes detalles:
@@ -98,14 +97,80 @@ update registros set TiempoInvertido = timediff(Llegada, Salida);
 id, nombre, apellidos, club (nombre completo), categoria (nombre completo), tiempoInvertido
 Ordenado de menor a mayor tiempo invertido */
 
-
+SELECT 
+    cor.id,
+    cor.nombre,
+    cor.apellidos,
+    clb.nombre nombre_club,
+    cat.nombre categoria,
+    reg.TiempoInvertido
+FROM
+    corredores cor
+        INNER JOIN
+    categorias cat ON cor.categoria_id = cat.id
+        INNER JOIN
+    clubs clb ON cor.club_id = clb.id
+        INNER JOIN
+    registros reg ON reg.corredor_id = cor.id
+WHERE
+    reg.carrera_id = 2
+ORDER BY reg.TiempoInvertido ASC;
 
 /* Muestra la misma clasificación anterior pero junto a la columna tiempoinvertido mostrar el total de segundos.  */
 
-
-
+SELECT 
+    cor.id,
+    cor.nombre,
+    cor.apellidos,
+    clb.nombre nombre_club,
+    cat.nombre categoria,
+    reg.TiempoInvertido,
+    TIME_TO_SEC(reg.TiempoInvertido) tiempo_segundos
+FROM
+    corredores cor
+        INNER JOIN
+    categorias cat ON cor.categoria_id = cat.id
+        INNER JOIN
+    clubs clb ON cor.club_id = clb.id
+        INNER JOIN
+    registros reg ON reg.corredor_id = cor.id
+WHERE
+    reg.carrera_id = 2
+ORDER BY reg.TiempoInvertido ASC;
 
 /* El reccord mundial de maratón lo posee el keniano Eliud Kipchoge a 2:01:39. Muestra la misma clasificación anterior pero especificando una nueva columna el tiempo que le ha faltado para batir el record mundial. */
 
+SELECT 
+    cor.id,
+    cor.nombre,
+    cor.apellidos,
+    clb.nombre nombre_club,
+    cat.nombre categoria,
+    reg.TiempoInvertido,
+    TIME_TO_SEC(reg.TiempoInvertido) tiempo_segundos,
+    timediff(reg.TiempoInvertido, '00:02:01.390000') dif_record_mundial
+FROM
+    corredores cor
+        INNER JOIN
+    categorias cat ON cor.categoria_id = cat.id
+        INNER JOIN
+    clubs clb ON cor.club_id = clb.id
+        INNER JOIN
+    registros reg ON reg.corredor_id = cor.id
+WHERE
+    reg.carrera_id = 2
+ORDER BY reg.TiempoInvertido ASC;
 
 /* Mostrar la clasificación de la categoría SNA. */
+
+SELECT 
+    cor.id, cor.nombre, cor.apellidos, reg.carrera_id, reg.TiempoInvertido
+FROM
+    corredores cor
+        INNER JOIN
+    categorias cat ON cor.categoria_id = cat.id
+        INNER JOIN
+    registros reg ON reg.corredor_id = cor.id
+WHERE
+    cat.id = 4
+ORDER BY reg.TiempoInvertido ASC;

@@ -1,0 +1,18 @@
+<clubs>
+    <club>
+        <id>6</id>
+        <NombreCorto>JAJ</NombreCorto>
+        <Nombre>Jauría Jerezana</Nombre>
+        <Ciudad>Jerez de la Fra.</Ciudad>
+        <FecFundacion>1989-05-12</FecFundacion>
+        <NumSocios>325</NumSocios>
+    </club>
+    <club>
+        <id>7</id>
+        <NombreCorto>RMD</NombreCorto>
+        <Nombre>Club Atletismo Los Remedios</Nombre>
+        <Ciudad>Ubrique</Ciudad>
+        <FecFundacion>2001-02-09</FecFundacion>
+        <NumSocios>225</NumSocios>
+    </club>
+</clubs>
