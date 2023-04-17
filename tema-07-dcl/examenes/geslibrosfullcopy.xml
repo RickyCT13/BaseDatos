@@ -1,0 +1,2076 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="geslibros">
+	<table_structure name="autores">
+		<field Field="id" Type="int(10) unsigned" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="nombre" Type="varchar(40)" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="nacionalidad" Type="varchar(20)" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="email" Type="varchar(45)" Null="YES" Key="UNI" Default="NULL" Extra="" Comment="" />
+		<field Field="fecha_nac" Type="datetime" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="fecha_def" Type="datetime" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="premios" Type="text" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="create_at" Type="timestamp" Null="NO" Key="" Default="current_timestamp()" Extra="" Comment="" />
+		<field Field="update_at" Type="timestamp" Null="NO" Key="" Default="current_timestamp()" Extra="" Comment="" />
+		<key Table="autores" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="10" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="autores" Non_unique="0" Key_name="email" Seq_in_index="1" Column_name="email" Collation="A" Cardinality="10" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="autores" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="10" Avg_row_length="1638" Data_length="16384" Max_data_length="0" Index_length="16384" Data_free="0" Auto_increment="12" Create_time="2023-03-07 12:09:07" Update_time="2023-04-17 08:05:09" Collation="utf8mb4_general_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
+	</table_structure>
+	<table_data name="autores">
+	<row>
+		<field name="id">1</field>
+		<field name="nombre">Gabriel García Márquez</field>
+		<field name="nacionalidad">Méjico</field>
+		<field name="email">garciamarquez@gmail.com</field>
+		<field name="fecha_nac">1927-12-21 00:00:00</field>
+		<field name="fecha_def">2014-12-21 00:00:00</field>
+		<field name="premios">Planeta, Cervantes, Nobel</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">2</field>
+		<field name="nombre">Oscar Wilde</field>
+		<field name="nacionalidad">Irlanda</field>
+		<field name="email">oscarwilde@gmail.com</field>
+		<field name="fecha_nac">1854-12-21 00:00:00</field>
+		<field name="fecha_def">1900-12-21 00:00:00</field>
+		<field name="premios">Nobel</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">3</field>
+		<field name="nombre">Jorge Luís Borges</field>
+		<field name="nacionalidad">Argentina</field>
+		<field name="email">jorgeluisborges@gmail.com</field>
+		<field name="fecha_nac">1899-12-21 00:00:00</field>
+		<field name="fecha_def">1986-12-21 00:00:00</field>
+		<field name="premios">Nobel, Cervantes</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">4</field>
+		<field name="nombre">Ernest Hemingway</field>
+		<field name="nacionalidad">Estados Unidos</field>
+		<field name="email">ernesthemingway@gmail.com</field>
+		<field name="fecha_nac">1899-12-21 00:00:00</field>
+		<field name="fecha_def">1961-12-21 00:00:00</field>
+		<field name="premios">Nobel, Cervantes</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">5</field>
+		<field name="nombre">Pablo Neruda</field>
+		<field name="nacionalidad">Chile</field>
+		<field name="email">pabloneruda@gmail.com</field>
+		<field name="fecha_nac">1904-12-21 00:00:00</field>
+		<field name="fecha_def">1973-12-21 00:00:00</field>
+		<field name="premios">Nobel, Cervantes, Planeta</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">6</field>
+		<field name="nombre">Federico García Lorca</field>
+		<field name="nacionalidad">España</field>
+		<field name="email">federicogarcialorca@gmail.com</field>
+		<field name="fecha_nac">1898-12-21 00:00:00</field>
+		<field name="fecha_def">1936-12-21 00:00:00</field>
+		<field name="premios">Cervantes</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">7</field>
+		<field name="nombre">Luis Cernuda</field>
+		<field name="nacionalidad">España</field>
+		<field name="email">cernbidouluis@gmail.com</field>
+		<field name="fecha_nac">1902-09-21 00:00:00</field>
+		<field name="fecha_def">1963-11-05 00:00:00</field>
+		<field name="premios">Premio Literario Lambda por Poesía para Hombres Gays</field>
+		<field name="create_at">2023-03-07 13:22:15</field>
+		<field name="update_at">2023-03-07 13:22:15</field>
+	</row>
+	<row>
+		<field name="id">9</field>
+		<field name="nombre">&quot;Ana María Matutes&quot;</field>
+		<field name="nacionalidad">&quot;España&quot;</field>
+		<field name="email">&quot;anamariamatutes@gmail.com&quot;</field>
+		<field name="fecha_nac">0000-00-00 00:00:00</field>
+		<field name="fecha_def">0000-00-00 00:00:00</field>
+		<field name="premios">&quot;Cervantes&quot;</field>
+		<field name="create_at">2023-04-17 08:05:09</field>
+		<field name="update_at">2023-04-17 08:05:09</field>
+	</row>
+	<row>
+		<field name="id">10</field>
+		<field name="nombre">&quot;Dan Brown&quot;</field>
+		<field name="nacionalidad">&quot;Inglaterra&quot;</field>
+		<field name="email">&quot;danbrown@gmail.com&quot;</field>
+		<field name="fecha_nac">0000-00-00 00:00:00</field>
+		<field name="fecha_def">0000-00-00 00:00:00</field>
+		<field name="premios">&quot;Nobel&quot;</field>
+		<field name="create_at">2023-04-17 08:05:09</field>
+		<field name="update_at">2023-04-17 08:05:09</field>
+	</row>
+	<row>
+		<field name="id">11</field>
+		<field name="nombre">&quot;George RR Martin&quot;</field>
+		<field name="nacionalidad">&quot;Estados Unidos&quot;</field>
+		<field name="email">&quot;georgerrmartin@gmail.com&quot;</field>
+		<field name="fecha_nac">0000-00-00 00:00:00</field>
+		<field name="fecha_def">0000-00-00 00:00:00</field>
+		<field name="premios">&quot;Nobel, Cervantes&quot;</field>
+		<field name="create_at">2023-04-17 08:05:09</field>
+		<field name="update_at">2023-04-17 08:05:09</field>
+	</row>
+	</table_data>
+	<table_structure name="clientes">
+		<field Field="id" Type="int(10) unsigned" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="nombre" Type="varchar(40)" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="direccion" Type="varchar(50)" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="poblacion" Type="varchar(50)" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="c_postal" Type="char(5)" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="provincia_id" Type="int(11)" Null="YES" Key="MUL" Default="NULL" Extra="" Comment="" />
+		<field Field="nif" Type="char(9)" Null="YES" Key="UNI" Default="NULL" Extra="" Comment="" />
+		<field Field="telefono" Type="char(9)" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="movil" Type="char(9)" Null="YES" Key="UNI" Default="NULL" Extra="" Comment="" />
+		<field Field="email" Type="varchar(45)" Null="YES" Key="UNI" Default="NULL" Extra="" Comment="" />
+		<field Field="create_at" Type="timestamp" Null="NO" Key="" Default="current_timestamp()" Extra="" Comment="" />
+		<field Field="update_at" Type="timestamp" Null="NO" Key="" Default="current_timestamp()" Extra="" Comment="" />
+		<key Table="clientes" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="8" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="clientes" Non_unique="0" Key_name="nif" Seq_in_index="1" Column_name="nif" Collation="A" Cardinality="8" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="clientes" Non_unique="0" Key_name="movil" Seq_in_index="1" Column_name="movil" Collation="A" Cardinality="8" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="clientes" Non_unique="0" Key_name="email" Seq_in_index="1" Column_name="email" Collation="A" Cardinality="8" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="clientes" Non_unique="1" Key_name="provincia_id" Seq_in_index="1" Column_name="provincia_id" Collation="A" Cardinality="8" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="clientes" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="8" Avg_row_length="2048" Data_length="16384" Max_data_length="0" Index_length="65536" Data_free="0" Auto_increment="10" Create_time="2023-03-07 12:09:07" Collation="utf8mb4_general_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
+	</table_structure>
+	<table_data name="clientes">
+	<row>
+		<field name="id">1</field>
+		<field name="nombre">CP Rio Tajo</field>
+		<field name="direccion">C/Las Flores 23</field>
+		<field name="poblacion">Guadalajara</field>
+		<field name="c_postal">19003</field>
+		<field name="provincia_id">19</field>
+		<field name="nif">34343434L</field>
+		<field name="telefono">949876655</field>
+		<field name="movil">949876655</field>
+		<field name="email">cpriotajo@gmail.com</field>
+		<field name="create_at">2011-03-23 23:00:00</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">2</field>
+		<field name="nombre">IES Brianda de Mendoza</field>
+		<field name="direccion">C/Hnos Fernández Galiano 6</field>
+		<field name="poblacion">Guadalajara</field>
+		<field name="c_postal">19004</field>
+		<field name="provincia_id">19</field>
+		<field name="nif">76767667F</field>
+		<field name="telefono">949772211</field>
+		<field name="movil">949256376</field>
+		<field name="email">brianda@correo.es</field>
+		<field name="create_at">2011-03-19 23:00:00</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">3</field>
+		<field name="nombre">Manuel Fernández</field>
+		<field name="direccion">Avenida del Atance 24</field>
+		<field name="poblacion">Guadalajara</field>
+		<field name="c_postal">19008</field>
+		<field name="provincia_id">19</field>
+		<field name="nif">22234567E</field>
+		<field name="telefono">94980009</field>
+		<field name="movil">949800090</field>
+		<field name="email">manuel@correo.es</field>
+		<field name="create_at">2011-02-27 23:00:00</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">4</field>
+		<field name="nombre">Alicia Perez González</field>
+		<field name="direccion">C/La Azucena 123</field>
+		<field name="poblacion">Talavera de La Reina</field>
+		<field name="c_postal">45678</field>
+		<field name="provincia_id">45</field>
+		<field name="nif">56564564J</field>
+		<field name="telefono">925678090</field>
+		<field name="movil"></field>
+		<field name="email">alicia@sucorreo.es</field>
+		<field name="create_at">2011-05-20 22:00:00</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">5</field>
+		<field name="nombre">Academia Central</field>
+		<field name="direccion">C/Espliego 25, Polig Industrial Balconcillo</field>
+		<field name="poblacion">Azuqueca de Henares</field>
+		<field name="c_postal">19008</field>
+		<field name="provincia_id">19</field>
+		<field name="nif">23124234G</field>
+		<field name="telefono">949008866</field>
+		<field name="movil">949008866</field>
+		<field name="email">academia@central.es</field>
+		<field name="create_at">2011-07-11 22:00:00</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">6</field>
+		<field name="nombre">Ayuntamiento de Ubrique</field>
+		<field name="direccion">La Plaza, 1</field>
+		<field name="poblacion">Ubrique</field>
+		<field name="c_postal">11600</field>
+		<field name="provincia_id">11</field>
+		<field name="nif">E2333213R</field>
+		<field name="telefono">956461290</field>
+		<field name="movil">956463230</field>
+		<field name="email">info@aytoubrique.es</field>
+		<field name="create_at">2012-08-10 22:00:00</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">7</field>
+		<field name="nombre">IES Ntra. Sra. Los Remedios</field>
+		<field name="direccion">Avd. Herrera Oria, s/n</field>
+		<field name="poblacion">Ubrique</field>
+		<field name="c_postal">11600</field>
+		<field name="provincia_id">11</field>
+		<field name="nif">E1212121R</field>
+		<field name="telefono">956461293</field>
+		<field name="movil">956847841</field>
+		<field name="email">info@ieslosremedios.org</field>
+		<field name="create_at">2013-08-09 22:00:00</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">9</field>
+		<field name="nombre">Librería Sierra Nevada</field>
+		<field name="direccion">Avd. España, 20</field>
+		<field name="poblacion">Ubrique</field>
+		<field name="c_postal">11600</field>
+		<field name="provincia_id">11</field>
+		<field name="nif">E1218121T</field>
+		<field name="telefono">956461200</field>
+		<field name="movil">956847800</field>
+		<field name="email">info@sierrablanca.org</field>
+		<field name="create_at">2017-05-12 22:00:00</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	</table_data>
+	<table_structure name="editoriales">
+		<field Field="id" Type="int(10) unsigned" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="nombre" Type="varchar(30)" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="direccion" Type="varchar(50)" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="poblacion" Type="varchar(25)" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="provincia_id" Type="int(11)" Null="YES" Key="MUL" Default="NULL" Extra="" Comment="" />
+		<field Field="c_postal" Type="char(5)" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="nif" Type="char(9)" Null="YES" Key="UNI" Default="NULL" Extra="" Comment="" />
+		<field Field="telefono" Type="char(9)" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="movil" Type="char(9)" Null="YES" Key="UNI" Default="NULL" Extra="" Comment="" />
+		<field Field="email" Type="varchar(40)" Null="YES" Key="UNI" Default="NULL" Extra="" Comment="" />
+		<field Field="web" Type="varchar(40)" Null="YES" Key="UNI" Default="NULL" Extra="" Comment="" />
+		<field Field="contacto" Type="varchar(40)" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="create_at" Type="timestamp" Null="NO" Key="" Default="current_timestamp()" Extra="" Comment="" />
+		<field Field="update_at" Type="timestamp" Null="NO" Key="" Default="current_timestamp()" Extra="" Comment="" />
+		<key Table="editoriales" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="7" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="editoriales" Non_unique="0" Key_name="nif" Seq_in_index="1" Column_name="nif" Collation="A" Cardinality="7" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="editoriales" Non_unique="0" Key_name="movil" Seq_in_index="1" Column_name="movil" Collation="A" Cardinality="7" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="editoriales" Non_unique="0" Key_name="email" Seq_in_index="1" Column_name="email" Collation="A" Cardinality="7" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="editoriales" Non_unique="0" Key_name="web" Seq_in_index="1" Column_name="web" Collation="A" Cardinality="7" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="editoriales" Non_unique="1" Key_name="provincia_id" Seq_in_index="1" Column_name="provincia_id" Collation="A" Cardinality="7" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="editoriales" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="7" Avg_row_length="2340" Data_length="16384" Max_data_length="0" Index_length="81920" Data_free="0" Auto_increment="8" Create_time="2023-03-07 12:09:07" Collation="utf8mb4_general_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
+	</table_structure>
+	<table_data name="editoriales">
+	<row>
+		<field name="id">1</field>
+		<field name="nombre">Ediciones Paraninfo S.A.</field>
+		<field name="direccion">Avda. Filipinas, 50, Bajo, Dcha. puerta A</field>
+		<field name="poblacion">Madrid</field>
+		<field name="provincia_id">28</field>
+		<field name="c_postal">28003</field>
+		<field name="nif">A81461477</field>
+		<field name="telefono">902995240</field>
+		<field name="movil" xsi:nil="true" />
+		<field name="email" xsi:nil="true" />
+		<field name="web">http://www.paraninfo.es</field>
+		<field name="contacto">Patricia García</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">2</field>
+		<field name="nombre">MCGRAWHILL</field>
+		<field name="direccion">C/ Basauri, 17, 1ª Planta</field>
+		<field name="poblacion">Aravaca</field>
+		<field name="provincia_id">28</field>
+		<field name="c_postal">28023</field>
+		<field name="nif">B28914323</field>
+		<field name="telefono">911803000</field>
+		<field name="movil" xsi:nil="true" />
+		<field name="email" xsi:nil="true" />
+		<field name="web">http://www.mcgraw-hill.es/</field>
+		<field name="contacto">Raquel Huertas</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">3</field>
+		<field name="nombre">RA-MA, S.A. Editorial y Public</field>
+		<field name="direccion">Cl. Jarama, 3A Polígono Industrial IGARSA</field>
+		<field name="poblacion">Paracuellos de Jarama</field>
+		<field name="provincia_id">28</field>
+		<field name="c_postal">28860</field>
+		<field name="nif">M16584280</field>
+		<field name="telefono">916628139</field>
+		<field name="movil">916628131</field>
+		<field name="email">editorial@ra-ma.com</field>
+		<field name="web">http://www.ra-ma.es/</field>
+		<field name="contacto">Rocio García</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">4</field>
+		<field name="nombre">Editorial Planeta, S.A.U.</field>
+		<field name="direccion">Avda Diagonal 662-664</field>
+		<field name="poblacion">Barcelona</field>
+		<field name="provincia_id">8</field>
+		<field name="c_postal">08034</field>
+		<field name="nif">A08186249</field>
+		<field name="telefono">934928978</field>
+		<field name="movil" xsi:nil="true" />
+		<field name="email">viajeros@geoplaneta.es</field>
+		<field name="web">www.editorial.planeta.es</field>
+		<field name="contacto">Roberto Rodríguez</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">5</field>
+		<field name="nombre">Alfaguara</field>
+		<field name="direccion">Calle Torrelaguna, 60</field>
+		<field name="poblacion">Madrid</field>
+		<field name="provincia_id">28</field>
+		<field name="c_postal">28043</field>
+		<field name="nif">A0818624X</field>
+		<field name="telefono">917449060</field>
+		<field name="movil">917449224</field>
+		<field name="email">alfaguara@santillana.es</field>
+		<field name="web">http://www.alfaguara.com/es/</field>
+		<field name="contacto">Isidoro Moreno</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">6</field>
+		<field name="nombre">Anaya</field>
+		<field name="direccion">Calle San Francisco, 30 A</field>
+		<field name="poblacion">Madrid</field>
+		<field name="provincia_id">28</field>
+		<field name="c_postal">28014</field>
+		<field name="nif">A0012514C</field>
+		<field name="telefono">917458458</field>
+		<field name="movil">963547852</field>
+		<field name="email">info@anaya.es</field>
+		<field name="web">www.anaya.com</field>
+		<field name="contacto">Rosario Vázquez</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">7</field>
+		<field name="nombre">Santillana</field>
+		<field name="direccion">Torero Romerito, 30 A</field>
+		<field name="poblacion">Sevilla</field>
+		<field name="provincia_id">21</field>
+		<field name="c_postal">21014</field>
+		<field name="nif">A0012518R</field>
+		<field name="telefono">927459458</field>
+		<field name="movil">963597852</field>
+		<field name="email">info@santillana.es</field>
+		<field name="web">www.santillana.com</field>
+		<field name="contacto">Rocío Márquez</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	</table_data>
+	<table_structure name="libros">
+		<field Field="id" Type="int(10) unsigned" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="isbn" Type="char(13)" Null="YES" Key="UNI" Default="NULL" Extra="" Comment="" />
+		<field Field="ean" Type="char(13)" Null="YES" Key="UNI" Default="NULL" Extra="" Comment="" />
+		<field Field="titulo" Type="varchar(80)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="autor_id" Type="int(10) unsigned" Null="YES" Key="MUL" Default="NULL" Extra="" Comment="" />
+		<field Field="editorial_id" Type="int(10) unsigned" Null="YES" Key="MUL" Default="NULL" Extra="" Comment="" />
+		<field Field="precio_coste" Type="decimal(10,2)" Null="YES" Key="" Default="0.00" Extra="" Comment="" />
+		<field Field="precio_venta" Type="decimal(10,2)" Null="YES" Key="" Default="0.00" Extra="" Comment="" />
+		<field Field="stock" Type="int(10) unsigned" Null="YES" Key="" Default="0" Extra="" Comment="" />
+		<field Field="stock_min" Type="int(10) unsigned" Null="YES" Key="" Default="0" Extra="" Comment="" />
+		<field Field="stock_max" Type="int(10) unsigned" Null="YES" Key="" Default="0" Extra="" Comment="" />
+		<field Field="fecha_edicion" Type="date" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="create_at" Type="timestamp" Null="NO" Key="" Default="current_timestamp()" Extra="" Comment="" />
+		<field Field="update_at" Type="timestamp" Null="NO" Key="" Default="current_timestamp()" Extra="" Comment="" />
+		<key Table="libros" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="24" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="libros" Non_unique="0" Key_name="isbn" Seq_in_index="1" Column_name="isbn" Collation="A" Cardinality="24" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="libros" Non_unique="0" Key_name="ean" Seq_in_index="1" Column_name="ean" Collation="A" Cardinality="24" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="libros" Non_unique="1" Key_name="editorial_id" Seq_in_index="1" Column_name="editorial_id" Collation="A" Cardinality="24" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="libros" Non_unique="1" Key_name="autor_id" Seq_in_index="1" Column_name="autor_id" Collation="A" Cardinality="24" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="libros" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="24" Avg_row_length="682" Data_length="16384" Max_data_length="0" Index_length="65536" Data_free="0" Auto_increment="25" Create_time="2023-03-07 12:09:07" Collation="utf8mb4_general_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
+	</table_structure>
+	<table_data name="libros">
+	<row>
+		<field name="id">1</field>
+		<field name="isbn">8497325524</field>
+		<field name="ean">9788497325523</field>
+		<field name="titulo">Operaciones Bases de Datos</field>
+		<field name="autor_id">1</field>
+		<field name="editorial_id">1</field>
+		<field name="precio_coste">20.00</field>
+		<field name="precio_venta">27.00</field>
+		<field name="stock">16</field>
+		<field name="stock_min">1</field>
+		<field name="stock_max">20</field>
+		<field name="fecha_edicion">2011-05-10</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">2</field>
+		<field name="isbn">8448199588</field>
+		<field name="ean">9788448199586</field>
+		<field name="titulo">Instalación y Mantenimiento de Equipos</field>
+		<field name="autor_id">2</field>
+		<field name="editorial_id">2</field>
+		<field name="precio_coste">22.00</field>
+		<field name="precio_venta">27.54</field>
+		<field name="stock">15</field>
+		<field name="stock_min">1</field>
+		<field name="stock_max">20</field>
+		<field name="fecha_edicion">2011-09-23</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">3</field>
+		<field name="isbn">844814760X</field>
+		<field name="ean">9788448147600</field>
+		<field name="titulo">Desarrollo Aplicaciones Entorno</field>
+		<field name="autor_id">3</field>
+		<field name="editorial_id">2</field>
+		<field name="precio_coste">24.00</field>
+		<field name="precio_venta">31.04</field>
+		<field name="stock">18</field>
+		<field name="stock_min">2</field>
+		<field name="stock_max">21</field>
+		<field name="fecha_edicion">2011-10-30</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">4</field>
+		<field name="isbn">8448148797</field>
+		<field name="ean">9788448148799</field>
+		<field name="titulo">Sistemas Gestores de Bases de Datos</field>
+		<field name="autor_id">4</field>
+		<field name="editorial_id">2</field>
+		<field name="precio_coste">25.00</field>
+		<field name="precio_venta">27.73</field>
+		<field name="stock">14</field>
+		<field name="stock_min">1</field>
+		<field name="stock_max">15</field>
+		<field name="fecha_edicion">2011-01-21</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">5</field>
+		<field name="isbn">9788408096511</field>
+		<field name="ean" xsi:nil="true" />
+		<field name="titulo">Camboya</field>
+		<field name="autor_id">5</field>
+		<field name="editorial_id">4</field>
+		<field name="precio_coste">20.00</field>
+		<field name="precio_venta">21.60</field>
+		<field name="stock">8</field>
+		<field name="stock_min">1</field>
+		<field name="stock_max">10</field>
+		<field name="fecha_edicion">2011-01-21</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">6</field>
+		<field name="isbn">9788408086833</field>
+		<field name="ean" xsi:nil="true" />
+		<field name="titulo">Amazonas</field>
+		<field name="autor_id">6</field>
+		<field name="editorial_id">4</field>
+		<field name="precio_coste">30.00</field>
+		<field name="precio_venta">40.50</field>
+		<field name="stock">6</field>
+		<field name="stock_min">1</field>
+		<field name="stock_max">7</field>
+		<field name="fecha_edicion">2011-02-10</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">7</field>
+		<field name="isbn">9788420405094</field>
+		<field name="ean" xsi:nil="true" />
+		<field name="titulo">CAIN</field>
+		<field name="autor_id">1</field>
+		<field name="editorial_id">5</field>
+		<field name="precio_coste">12.00</field>
+		<field name="precio_venta">15.48</field>
+		<field name="stock">7</field>
+		<field name="stock_min">1</field>
+		<field name="stock_max">10</field>
+		<field name="fecha_edicion">2011-11-20</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">8</field>
+		<field name="isbn">9788497328135</field>
+		<field name="ean" xsi:nil="true" />
+		<field name="titulo">Aplicaciones Web</field>
+		<field name="autor_id">2</field>
+		<field name="editorial_id">1</field>
+		<field name="precio_coste">22.00</field>
+		<field name="precio_venta">22.50</field>
+		<field name="stock">15</field>
+		<field name="stock_min">1</field>
+		<field name="stock_max">20</field>
+		<field name="fecha_edicion">2011-10-06</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">9</field>
+		<field name="isbn">9788448170783</field>
+		<field name="ean" xsi:nil="true" />
+		<field name="titulo">Montaje y Mantenimiento de Equipos</field>
+		<field name="autor_id">3</field>
+		<field name="editorial_id">2</field>
+		<field name="precio_coste">25.00</field>
+		<field name="precio_venta">27.00</field>
+		<field name="stock">5</field>
+		<field name="stock_min">1</field>
+		<field name="stock_max">10</field>
+		<field name="fecha_edicion">2011-03-20</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">10</field>
+		<field name="isbn">9788448170785</field>
+		<field name="ean" xsi:nil="true" />
+		<field name="titulo">Programación en PHP Orientada a Objetos</field>
+		<field name="autor_id">4</field>
+		<field name="editorial_id">3</field>
+		<field name="precio_coste">17.00</field>
+		<field name="precio_venta">22.50</field>
+		<field name="stock">10</field>
+		<field name="stock_min">3</field>
+		<field name="stock_max">30</field>
+		<field name="fecha_edicion">2014-04-10</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">11</field>
+		<field name="isbn">9788448170786</field>
+		<field name="ean" xsi:nil="true" />
+		<field name="titulo">Desarrollo Web con PHP y MSQL</field>
+		<field name="autor_id">5</field>
+		<field name="editorial_id">6</field>
+		<field name="precio_coste">20.00</field>
+		<field name="precio_venta">28.62</field>
+		<field name="stock">12</field>
+		<field name="stock_min">3</field>
+		<field name="stock_max">30</field>
+		<field name="fecha_edicion">2013-04-10</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">12</field>
+		<field name="isbn">9788448170787</field>
+		<field name="ean" xsi:nil="true" />
+		<field name="titulo">La Vida del Lazarillo de Tormes</field>
+		<field name="autor_id">6</field>
+		<field name="editorial_id">3</field>
+		<field name="precio_coste">10.00</field>
+		<field name="precio_venta">11.70</field>
+		<field name="stock">12</field>
+		<field name="stock_min">3</field>
+		<field name="stock_max">30</field>
+		<field name="fecha_edicion">2012-03-10</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">13</field>
+		<field name="isbn">9788448170788</field>
+		<field name="ean" xsi:nil="true" />
+		<field name="titulo">Le Petit Prince</field>
+		<field name="autor_id">1</field>
+		<field name="editorial_id">5</field>
+		<field name="precio_coste">10.30</field>
+		<field name="precio_venta">10.80</field>
+		<field name="stock">12</field>
+		<field name="stock_min">3</field>
+		<field name="stock_max">30</field>
+		<field name="fecha_edicion">2012-01-11</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">14</field>
+		<field name="isbn">9788448170789</field>
+		<field name="ean" xsi:nil="true" />
+		<field name="titulo">Pepita Jiménez</field>
+		<field name="autor_id">2</field>
+		<field name="editorial_id">5</field>
+		<field name="precio_coste">9.30</field>
+		<field name="precio_venta">11.07</field>
+		<field name="stock">11</field>
+		<field name="stock_min">2</field>
+		<field name="stock_max">16</field>
+		<field name="fecha_edicion">2014-04-11</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">15</field>
+		<field name="isbn">9788448170790</field>
+		<field name="ean" xsi:nil="true" />
+		<field name="titulo">Cantar de Mio cid</field>
+		<field name="autor_id" xsi:nil="true" />
+		<field name="editorial_id">6</field>
+		<field name="precio_coste">8.30</field>
+		<field name="precio_venta">9.06</field>
+		<field name="stock">1</field>
+		<field name="stock_min">1</field>
+		<field name="stock_max">30</field>
+		<field name="fecha_edicion">2010-01-11</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">16</field>
+		<field name="isbn">9788448170791</field>
+		<field name="ean" xsi:nil="true" />
+		<field name="titulo">Cien Años de Soledad</field>
+		<field name="autor_id">1</field>
+		<field name="editorial_id">6</field>
+		<field name="precio_coste">20.30</field>
+		<field name="precio_venta">24.42</field>
+		<field name="stock">20</field>
+		<field name="stock_min">3</field>
+		<field name="stock_max">30</field>
+		<field name="fecha_edicion">2010-06-11</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">17</field>
+		<field name="isbn">9788448170792</field>
+		<field name="ean" xsi:nil="true" />
+		<field name="titulo">Dioses Clásicos de la Mitología</field>
+		<field name="autor_id">2</field>
+		<field name="editorial_id">5</field>
+		<field name="precio_coste">5.30</field>
+		<field name="precio_venta">10.80</field>
+		<field name="stock">6</field>
+		<field name="stock_min">3</field>
+		<field name="stock_max">10</field>
+		<field name="fecha_edicion">2012-12-11</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">18</field>
+		<field name="isbn">9788448170793</field>
+		<field name="ean" xsi:nil="true" />
+		<field name="titulo">La Historia Interminable</field>
+		<field name="autor_id">3</field>
+		<field name="editorial_id">5</field>
+		<field name="precio_coste">10.30</field>
+		<field name="precio_venta">13.50</field>
+		<field name="stock">6</field>
+		<field name="stock_min">2</field>
+		<field name="stock_max">10</field>
+		<field name="fecha_edicion">1985-12-11</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">19</field>
+		<field name="isbn">9788448180800</field>
+		<field name="ean" xsi:nil="true" />
+		<field name="titulo">La Historia del Flamenco</field>
+		<field name="autor_id">4</field>
+		<field name="editorial_id">5</field>
+		<field name="precio_coste">10.30</field>
+		<field name="precio_venta">13.50</field>
+		<field name="stock">6</field>
+		<field name="stock_min">2</field>
+		<field name="stock_max">10</field>
+		<field name="fecha_edicion">2000-12-11</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">20</field>
+		<field name="isbn">1454781452365</field>
+		<field name="ean">6549852541457</field>
+		<field name="titulo">La Realidad y el Deseo</field>
+		<field name="autor_id">7</field>
+		<field name="editorial_id">7</field>
+		<field name="precio_coste">15.50</field>
+		<field name="precio_venta">15.75</field>
+		<field name="stock">19</field>
+		<field name="stock_min">30</field>
+		<field name="stock_max">5</field>
+		<field name="fecha_edicion">2014-06-06</field>
+		<field name="create_at">2023-03-07 13:30:02</field>
+		<field name="update_at">2023-03-07 13:30:02</field>
+	</row>
+	<row>
+		<field name="id">21</field>
+		<field name="isbn">7811454452365</field>
+		<field name="ean">5654982541457</field>
+		<field name="titulo">Égloga, elegía, y oda</field>
+		<field name="autor_id">7</field>
+		<field name="editorial_id">7</field>
+		<field name="precio_coste">14.13</field>
+		<field name="precio_venta">17.41</field>
+		<field name="stock">14</field>
+		<field name="stock_min">20</field>
+		<field name="stock_max">7</field>
+		<field name="fecha_edicion">2017-03-12</field>
+		<field name="create_at">2023-03-07 13:30:02</field>
+		<field name="update_at">2023-03-07 13:30:02</field>
+	</row>
+	<row>
+		<field name="id">22</field>
+		<field name="isbn">9784848170877</field>
+		<field name="ean" xsi:nil="true" />
+		<field name="titulo">Bases de datos NoSQL</field>
+		<field name="autor_id">5</field>
+		<field name="editorial_id">6</field>
+		<field name="precio_coste">15.00</field>
+		<field name="precio_venta">17.50</field>
+		<field name="stock">7</field>
+		<field name="stock_min">5</field>
+		<field name="stock_max">23</field>
+		<field name="fecha_edicion">0000-00-00</field>
+		<field name="create_at">2023-03-16 08:05:50</field>
+		<field name="update_at">2023-03-16 08:05:50</field>
+	</row>
+	<row>
+		<field name="id">23</field>
+		<field name="isbn">4848170897877</field>
+		<field name="ean" xsi:nil="true" />
+		<field name="titulo">Programación Orientada a Objetos, Material Teórico</field>
+		<field name="autor_id">5</field>
+		<field name="editorial_id">5</field>
+		<field name="precio_coste">20.34</field>
+		<field name="precio_venta">27.50</field>
+		<field name="stock">12</field>
+		<field name="stock_min">5</field>
+		<field name="stock_max">25</field>
+		<field name="fecha_edicion">0000-00-00</field>
+		<field name="create_at">2023-03-16 08:05:50</field>
+		<field name="update_at">2023-03-16 08:05:50</field>
+	</row>
+	<row>
+		<field name="id">24</field>
+		<field name="isbn">6165654654145</field>
+		<field name="ean" xsi:nil="true" />
+		<field name="titulo">Algoritmia Avanzada en Java</field>
+		<field name="autor_id">5</field>
+		<field name="editorial_id">4</field>
+		<field name="precio_coste">12.13</field>
+		<field name="precio_venta">15.00</field>
+		<field name="stock">12</field>
+		<field name="stock_min">30</field>
+		<field name="stock_max">10</field>
+		<field name="fecha_edicion">2023-01-25</field>
+		<field name="create_at">2023-03-16 08:17:10</field>
+		<field name="update_at">2023-03-16 08:17:10</field>
+	</row>
+	</table_data>
+	<table_structure name="libros_temas">
+		<field Field="libro_id" Type="int(10) unsigned" Null="NO" Key="PRI" Extra="" Comment="" />
+		<field Field="tema_id" Type="int(10) unsigned" Null="NO" Key="PRI" Extra="" Comment="" />
+		<field Field="create_at" Type="timestamp" Null="NO" Key="" Default="current_timestamp()" Extra="" Comment="" />
+		<field Field="update_at" Type="timestamp" Null="NO" Key="" Default="current_timestamp()" Extra="" Comment="" />
+		<key Table="libros_temas" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="libro_id" Collation="A" Cardinality="26" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="libros_temas" Non_unique="0" Key_name="PRIMARY" Seq_in_index="2" Column_name="tema_id" Collation="A" Cardinality="26" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="libros_temas" Non_unique="1" Key_name="tema_id" Seq_in_index="1" Column_name="tema_id" Collation="A" Cardinality="13" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="libros_temas" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="26" Avg_row_length="630" Data_length="16384" Max_data_length="0" Index_length="16384" Data_free="0" Create_time="2023-03-07 12:09:07" Collation="utf8mb4_general_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
+	</table_structure>
+	<table_data name="libros_temas">
+	<row>
+		<field name="libro_id">1</field>
+		<field name="tema_id">1</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">2</field>
+		<field name="tema_id">1</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">3</field>
+		<field name="tema_id">1</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">3</field>
+		<field name="tema_id">2</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">4</field>
+		<field name="tema_id">1</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">5</field>
+		<field name="tema_id">3</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">5</field>
+		<field name="tema_id">4</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">6</field>
+		<field name="tema_id">3</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">6</field>
+		<field name="tema_id">4</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">7</field>
+		<field name="tema_id">3</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">8</field>
+		<field name="tema_id">1</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">9</field>
+		<field name="tema_id">1</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">10</field>
+		<field name="tema_id">1</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">10</field>
+		<field name="tema_id">2</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">11</field>
+		<field name="tema_id">1</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">11</field>
+		<field name="tema_id">3</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">12</field>
+		<field name="tema_id">3</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">13</field>
+		<field name="tema_id">3</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">14</field>
+		<field name="tema_id">3</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">14</field>
+		<field name="tema_id">8</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">15</field>
+		<field name="tema_id">5</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">16</field>
+		<field name="tema_id">3</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">17</field>
+		<field name="tema_id">3</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">18</field>
+		<field name="tema_id">3</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">19</field>
+		<field name="tema_id">3</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">19</field>
+		<field name="tema_id">8</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="libro_id">20</field>
+		<field name="tema_id">3</field>
+		<field name="create_at">2023-03-07 13:35:06</field>
+		<field name="update_at">2023-03-07 13:35:06</field>
+	</row>
+	<row>
+		<field name="libro_id">20</field>
+		<field name="tema_id">5</field>
+		<field name="create_at">2023-03-07 13:35:06</field>
+		<field name="update_at">2023-03-07 13:35:06</field>
+	</row>
+	<row>
+		<field name="libro_id">21</field>
+		<field name="tema_id">3</field>
+		<field name="create_at">2023-03-07 13:35:06</field>
+		<field name="update_at">2023-03-07 13:35:06</field>
+	</row>
+	<row>
+		<field name="libro_id">21</field>
+		<field name="tema_id">5</field>
+		<field name="create_at">2023-03-07 13:35:06</field>
+		<field name="update_at">2023-03-07 13:35:06</field>
+	</row>
+	</table_data>
+	<table_structure name="lineasventas">
+		<field Field="id" Type="int(10) unsigned" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="venta_id" Type="int(10) unsigned" Null="NO" Key="MUL" Extra="" Comment="" />
+		<field Field="numero_linea" Type="smallint(5) unsigned" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="libro_id" Type="int(10) unsigned" Null="YES" Key="MUL" Default="NULL" Extra="" Comment="" />
+		<field Field="iva" Type="decimal(4,3)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="cantidad" Type="mediumint(8) unsigned" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="precio" Type="decimal(10,2)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="importe" Type="decimal(10,2)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="create_at" Type="timestamp" Null="NO" Key="" Default="current_timestamp()" Extra="" Comment="" />
+		<field Field="update_at" Type="timestamp" Null="NO" Key="" Default="current_timestamp()" Extra="" Comment="" />
+		<key Table="lineasventas" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="37" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="lineasventas" Non_unique="0" Key_name="venta_id" Seq_in_index="1" Column_name="venta_id" Collation="A" Cardinality="37" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="lineasventas" Non_unique="0" Key_name="venta_id" Seq_in_index="2" Column_name="numero_linea" Collation="A" Cardinality="37" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="lineasventas" Non_unique="1" Key_name="libro_id" Seq_in_index="1" Column_name="libro_id" Collation="A" Cardinality="37" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="lineasventas" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="37" Avg_row_length="442" Data_length="16384" Max_data_length="0" Index_length="32768" Data_free="0" Auto_increment="45" Create_time="2023-03-07 12:09:08" Collation="utf8mb4_general_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
+	</table_structure>
+	<table_data name="lineasventas">
+	<row>
+		<field name="id">1</field>
+		<field name="venta_id">1</field>
+		<field name="numero_linea">1</field>
+		<field name="libro_id">1</field>
+		<field name="iva">0.180</field>
+		<field name="cantidad">1</field>
+		<field name="precio">38.32</field>
+		<field name="importe">38.32</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">2</field>
+		<field name="venta_id">1</field>
+		<field name="numero_linea">2</field>
+		<field name="libro_id">2</field>
+		<field name="iva">0.180</field>
+		<field name="cantidad">2</field>
+		<field name="precio">34.00</field>
+		<field name="importe">68.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">3</field>
+		<field name="venta_id">1</field>
+		<field name="numero_linea">3</field>
+		<field name="libro_id">3</field>
+		<field name="iva">0.180</field>
+		<field name="cantidad">2</field>
+		<field name="precio">25.00</field>
+		<field name="importe">50.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">4</field>
+		<field name="venta_id">1</field>
+		<field name="numero_linea">4</field>
+		<field name="libro_id">4</field>
+		<field name="iva">0.180</field>
+		<field name="cantidad">4</field>
+		<field name="precio">25.00</field>
+		<field name="importe">100.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">5</field>
+		<field name="venta_id">1</field>
+		<field name="numero_linea">5</field>
+		<field name="libro_id">5</field>
+		<field name="iva">0.180</field>
+		<field name="cantidad">5</field>
+		<field name="precio">30.00</field>
+		<field name="importe">150.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">6</field>
+		<field name="venta_id">2</field>
+		<field name="numero_linea">1</field>
+		<field name="libro_id">5</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">10</field>
+		<field name="precio">24.00</field>
+		<field name="importe">240.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">7</field>
+		<field name="venta_id">2</field>
+		<field name="numero_linea">2</field>
+		<field name="libro_id">6</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">2</field>
+		<field name="precio">45.00</field>
+		<field name="importe">90.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">8</field>
+		<field name="venta_id">2</field>
+		<field name="numero_linea">3</field>
+		<field name="libro_id">7</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">2</field>
+		<field name="precio">17.20</field>
+		<field name="importe">34.40</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">9</field>
+		<field name="venta_id">3</field>
+		<field name="numero_linea">1</field>
+		<field name="libro_id">4</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">4</field>
+		<field name="precio">34.00</field>
+		<field name="importe">136.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">10</field>
+		<field name="venta_id">3</field>
+		<field name="numero_linea">2</field>
+		<field name="libro_id">5</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">5</field>
+		<field name="precio">24.00</field>
+		<field name="importe">120.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">11</field>
+		<field name="venta_id">4</field>
+		<field name="numero_linea">1</field>
+		<field name="libro_id">6</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">10</field>
+		<field name="precio">45.00</field>
+		<field name="importe">450.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">12</field>
+		<field name="venta_id">4</field>
+		<field name="numero_linea">2</field>
+		<field name="libro_id">7</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">5</field>
+		<field name="precio">17.20</field>
+		<field name="importe">86.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">13</field>
+		<field name="venta_id">4</field>
+		<field name="numero_linea">3</field>
+		<field name="libro_id">8</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">3</field>
+		<field name="precio">25.00</field>
+		<field name="importe">75.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">14</field>
+		<field name="venta_id">4</field>
+		<field name="numero_linea">4</field>
+		<field name="libro_id">9</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">20</field>
+		<field name="precio">30.00</field>
+		<field name="importe">600.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">15</field>
+		<field name="venta_id">4</field>
+		<field name="numero_linea">5</field>
+		<field name="libro_id">10</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">4</field>
+		<field name="precio">25.00</field>
+		<field name="importe">100.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">16</field>
+		<field name="venta_id">5</field>
+		<field name="numero_linea">1</field>
+		<field name="libro_id">11</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">10</field>
+		<field name="precio">25.00</field>
+		<field name="importe">250.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">17</field>
+		<field name="venta_id">5</field>
+		<field name="numero_linea">2</field>
+		<field name="libro_id">12</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">7</field>
+		<field name="precio">30.00</field>
+		<field name="importe">210.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">18</field>
+		<field name="venta_id">5</field>
+		<field name="numero_linea">3</field>
+		<field name="libro_id">13</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">30</field>
+		<field name="precio">13.00</field>
+		<field name="importe">260.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">19</field>
+		<field name="venta_id">5</field>
+		<field name="numero_linea">4</field>
+		<field name="libro_id">14</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">20</field>
+		<field name="precio">12.00</field>
+		<field name="importe">360.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">20</field>
+		<field name="venta_id">5</field>
+		<field name="numero_linea">5</field>
+		<field name="libro_id">15</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">4</field>
+		<field name="precio">12.30</field>
+		<field name="importe">49.20</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">21</field>
+		<field name="venta_id">6</field>
+		<field name="numero_linea">1</field>
+		<field name="libro_id">14</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">10</field>
+		<field name="precio">12.30</field>
+		<field name="importe">123.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">22</field>
+		<field name="venta_id">6</field>
+		<field name="numero_linea">2</field>
+		<field name="libro_id">15</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">5</field>
+		<field name="precio">9.50</field>
+		<field name="importe">142.50</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">23</field>
+		<field name="venta_id">6</field>
+		<field name="numero_linea">3</field>
+		<field name="libro_id">16</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">20</field>
+		<field name="precio">25.60</field>
+		<field name="importe">512.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">24</field>
+		<field name="venta_id">6</field>
+		<field name="numero_linea">4</field>
+		<field name="libro_id">17</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">30</field>
+		<field name="precio">12.00</field>
+		<field name="importe">360.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">25</field>
+		<field name="venta_id">6</field>
+		<field name="numero_linea">5</field>
+		<field name="libro_id">13</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">40</field>
+		<field name="precio">12.00</field>
+		<field name="importe">480.20</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">26</field>
+		<field name="venta_id">7</field>
+		<field name="numero_linea">1</field>
+		<field name="libro_id">5</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">10</field>
+		<field name="precio">24.00</field>
+		<field name="importe">240.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">27</field>
+		<field name="venta_id">7</field>
+		<field name="numero_linea">2</field>
+		<field name="libro_id">7</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">15</field>
+		<field name="precio">12.20</field>
+		<field name="importe">183.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">28</field>
+		<field name="venta_id">7</field>
+		<field name="numero_linea">3</field>
+		<field name="libro_id">10</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">20</field>
+		<field name="precio">25.00</field>
+		<field name="importe">500.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">29</field>
+		<field name="venta_id">7</field>
+		<field name="numero_linea">4</field>
+		<field name="libro_id">13</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">30</field>
+		<field name="precio">12.00</field>
+		<field name="importe">360.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">30</field>
+		<field name="venta_id">7</field>
+		<field name="numero_linea">5</field>
+		<field name="libro_id">16</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">40</field>
+		<field name="precio">25.60</field>
+		<field name="importe">1024.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">31</field>
+		<field name="venta_id">7</field>
+		<field name="numero_linea">6</field>
+		<field name="libro_id">17</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">40</field>
+		<field name="precio">12.00</field>
+		<field name="importe">480.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">32</field>
+		<field name="venta_id">8</field>
+		<field name="numero_linea">1</field>
+		<field name="libro_id">6</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">10</field>
+		<field name="precio">45.00</field>
+		<field name="importe">450.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">33</field>
+		<field name="venta_id">8</field>
+		<field name="numero_linea">2</field>
+		<field name="libro_id">7</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">15</field>
+		<field name="precio">12.20</field>
+		<field name="importe">183.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">34</field>
+		<field name="venta_id">9</field>
+		<field name="numero_linea">1</field>
+		<field name="libro_id">11</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">10</field>
+		<field name="precio">30.00</field>
+		<field name="importe">300.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">35</field>
+		<field name="venta_id">9</field>
+		<field name="numero_linea">2</field>
+		<field name="libro_id">12</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">10</field>
+		<field name="precio">13.00</field>
+		<field name="importe">130.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">36</field>
+		<field name="venta_id">10</field>
+		<field name="numero_linea">1</field>
+		<field name="libro_id">13</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">10</field>
+		<field name="precio">12.00</field>
+		<field name="importe">120.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">37</field>
+		<field name="venta_id">10</field>
+		<field name="numero_linea">2</field>
+		<field name="libro_id">14</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">10</field>
+		<field name="precio">12.30</field>
+		<field name="importe">123.00</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">39</field>
+		<field name="venta_id">11</field>
+		<field name="numero_linea">1</field>
+		<field name="libro_id">17</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">2</field>
+		<field name="precio">12.00</field>
+		<field name="importe">29.04</field>
+		<field name="create_at">2023-03-07 13:47:19</field>
+		<field name="update_at">2023-03-07 13:47:19</field>
+	</row>
+	<row>
+		<field name="id">40</field>
+		<field name="venta_id">11</field>
+		<field name="numero_linea">2</field>
+		<field name="libro_id">20</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">2</field>
+		<field name="precio">17.50</field>
+		<field name="importe">42.35</field>
+		<field name="create_at">2023-03-07 13:47:22</field>
+		<field name="update_at">2023-03-07 13:47:22</field>
+	</row>
+	<row>
+		<field name="id">41</field>
+		<field name="venta_id">11</field>
+		<field name="numero_linea">3</field>
+		<field name="libro_id">21</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">2</field>
+		<field name="precio">19.34</field>
+		<field name="importe">46.80</field>
+		<field name="create_at">2023-03-07 13:47:24</field>
+		<field name="update_at">2023-03-07 13:47:24</field>
+	</row>
+	<row>
+		<field name="id">42</field>
+		<field name="venta_id">12</field>
+		<field name="numero_linea">1</field>
+		<field name="libro_id">22</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">3</field>
+		<field name="precio">17.50</field>
+		<field name="importe">63.53</field>
+		<field name="create_at">2023-03-16 08:16:31</field>
+		<field name="update_at">2023-03-16 08:16:31</field>
+	</row>
+	<row>
+		<field name="id">43</field>
+		<field name="venta_id">12</field>
+		<field name="numero_linea">2</field>
+		<field name="libro_id">11</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">1</field>
+		<field name="precio">28.62</field>
+		<field name="importe">34.63</field>
+		<field name="create_at">2023-03-16 08:16:31</field>
+		<field name="update_at">2023-03-16 08:16:31</field>
+	</row>
+	<row>
+		<field name="id">44</field>
+		<field name="venta_id">12</field>
+		<field name="numero_linea">3</field>
+		<field name="libro_id">23</field>
+		<field name="iva">0.210</field>
+		<field name="cantidad">3</field>
+		<field name="precio">17.50</field>
+		<field name="importe">63.53</field>
+		<field name="create_at">2023-03-16 08:16:31</field>
+		<field name="update_at">2023-03-16 08:16:31</field>
+	</row>
+	</table_data>
+	<table_structure name="provincias">
+		<field Field="id" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="provincia" Type="varchar(40)" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="create_at" Type="timestamp" Null="NO" Key="" Default="current_timestamp()" Extra="" Comment="" />
+		<field Field="update_at" Type="timestamp" Null="NO" Key="" Default="current_timestamp()" Extra="" Comment="" />
+		<key Table="provincias" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="52" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="provincias" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="52" Avg_row_length="315" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="53" Create_time="2023-03-07 12:09:07" Collation="utf8mb4_general_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
+	</table_structure>
+	<table_data name="provincias">
+	<row>
+		<field name="id">1</field>
+		<field name="provincia">Álava</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">2</field>
+		<field name="provincia">Albacete</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">3</field>
+		<field name="provincia">Alicante</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">4</field>
+		<field name="provincia">Almería</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">5</field>
+		<field name="provincia">Ávila</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">6</field>
+		<field name="provincia">Badajoz</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">7</field>
+		<field name="provincia">Baleares (Illes)</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">8</field>
+		<field name="provincia">Barcelona</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">9</field>
+		<field name="provincia">Burgos</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">10</field>
+		<field name="provincia">Cáceres</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">11</field>
+		<field name="provincia">Cádiz</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">12</field>
+		<field name="provincia">Castellón</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">13</field>
+		<field name="provincia">Ciudad Real</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">14</field>
+		<field name="provincia">Córdoba</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">15</field>
+		<field name="provincia">A Coruña</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">16</field>
+		<field name="provincia">Cuenca</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">17</field>
+		<field name="provincia">Girona</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">18</field>
+		<field name="provincia">Granada</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">19</field>
+		<field name="provincia">Guadalajara</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">20</field>
+		<field name="provincia">Guipúzcoa</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">21</field>
+		<field name="provincia">Huelva</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">22</field>
+		<field name="provincia">Huesca</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">23</field>
+		<field name="provincia">Jaén</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">24</field>
+		<field name="provincia">León</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">25</field>
+		<field name="provincia">Lleida</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">26</field>
+		<field name="provincia">La Rioja</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">27</field>
+		<field name="provincia">Lugo</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">28</field>
+		<field name="provincia">Madrid</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">29</field>
+		<field name="provincia">Málaga</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">30</field>
+		<field name="provincia">Murcia</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">31</field>
+		<field name="provincia">Navarra</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">32</field>
+		<field name="provincia">Ourense</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">33</field>
+		<field name="provincia">Asturias</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">34</field>
+		<field name="provincia">Palencia</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">35</field>
+		<field name="provincia">Las Palmas</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">36</field>
+		<field name="provincia">Pontevedra</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">37</field>
+		<field name="provincia">Salamanca</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">38</field>
+		<field name="provincia">Santa Cruz de Tenerife</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">39</field>
+		<field name="provincia">Cantabria</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">40</field>
+		<field name="provincia">Segovia</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">41</field>
+		<field name="provincia">Sevilla</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">42</field>
+		<field name="provincia">Soria</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">43</field>
+		<field name="provincia">Tarragona</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">44</field>
+		<field name="provincia">Teruel</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">45</field>
+		<field name="provincia">Toledo</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">46</field>
+		<field name="provincia">Valencia</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">47</field>
+		<field name="provincia">Valladolid</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">48</field>
+		<field name="provincia">Vizcaya</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">49</field>
+		<field name="provincia">Zamora</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">50</field>
+		<field name="provincia">Zaragoza</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">51</field>
+		<field name="provincia">Ceuta</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">52</field>
+		<field name="provincia">Melilla</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	</table_data>
+	<table_structure name="temas">
+		<field Field="id" Type="int(10) unsigned" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="tema" Type="varchar(30)" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="create_at" Type="timestamp" Null="NO" Key="" Default="current_timestamp()" Extra="" Comment="" />
+		<field Field="update_at" Type="timestamp" Null="NO" Key="" Default="current_timestamp()" Extra="" Comment="" />
+		<key Table="temas" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="9" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="temas" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="9" Avg_row_length="1820" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="10" Create_time="2023-03-07 12:09:07" Collation="utf8mb4_general_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
+	</table_structure>
+	<table_data name="temas">
+	<row>
+		<field name="id">1</field>
+		<field name="tema">Informática</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">2</field>
+		<field name="tema">Matemáticas</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">3</field>
+		<field name="tema">Novela</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">4</field>
+		<field name="tema">Viajes</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">5</field>
+		<field name="tema">Belleza</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">6</field>
+		<field name="tema">Deportes</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">7</field>
+		<field name="tema">Astronomía</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">8</field>
+		<field name="tema">Música</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	<row>
+		<field name="id">9</field>
+		<field name="tema">Ciencia</field>
+		<field name="create_at">2023-03-07 12:09:07</field>
+		<field name="update_at">2023-03-07 12:09:07</field>
+	</row>
+	</table_data>
+	<table_structure name="ventas">
+		<field Field="id" Type="int(10) unsigned" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="cliente_id" Type="int(10) unsigned" Null="YES" Key="MUL" Default="NULL" Extra="" Comment="" />
+		<field Field="fecha" Type="date" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="importe_bruto" Type="decimal(10,2)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="importe_iva" Type="decimal(10,2)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="importe_total" Type="decimal(10,2)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="create_at" Type="timestamp" Null="NO" Key="" Default="current_timestamp()" Extra="" Comment="" />
+		<field Field="update_at" Type="timestamp" Null="NO" Key="" Default="current_timestamp()" Extra="" Comment="" />
+		<key Table="ventas" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="10" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="ventas" Non_unique="1" Key_name="cliente_id" Seq_in_index="1" Column_name="cliente_id" Collation="A" Cardinality="10" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="ventas" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="10" Avg_row_length="1638" Data_length="16384" Max_data_length="0" Index_length="16384" Data_free="0" Auto_increment="15" Create_time="2023-03-07 12:09:07" Collation="utf8mb4_general_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
+	</table_structure>
+	<table_data name="ventas">
+	<row>
+		<field name="id">1</field>
+		<field name="cliente_id">3</field>
+		<field name="fecha">2012-02-18</field>
+		<field name="importe_bruto">122.32</field>
+		<field name="importe_iva">4.89</field>
+		<field name="importe_total">127.21</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">2</field>
+		<field name="cliente_id">6</field>
+		<field name="fecha">2013-01-18</field>
+		<field name="importe_bruto">364.00</field>
+		<field name="importe_iva">76.44</field>
+		<field name="importe_total">440.44</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">3</field>
+		<field name="cliente_id">4</field>
+		<field name="fecha">2014-01-15</field>
+		<field name="importe_bruto">256.00</field>
+		<field name="importe_iva">53.71</field>
+		<field name="importe_total">309.76</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">4</field>
+		<field name="cliente_id">7</field>
+		<field name="fecha">2014-01-15</field>
+		<field name="importe_bruto">1311.00</field>
+		<field name="importe_iva">275.31</field>
+		<field name="importe_total">1586.31</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">5</field>
+		<field name="cliente_id">5</field>
+		<field name="fecha">2014-03-15</field>
+		<field name="importe_bruto">1129.20</field>
+		<field name="importe_iva">237.13</field>
+		<field name="importe_total">1366.33</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">6</field>
+		<field name="cliente_id">1</field>
+		<field name="fecha">2014-03-24</field>
+		<field name="importe_bruto">1617.50</field>
+		<field name="importe_iva">339.68</field>
+		<field name="importe_total">1957.18</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">7</field>
+		<field name="cliente_id">7</field>
+		<field name="fecha">2014-03-26</field>
+		<field name="importe_bruto">2787.00</field>
+		<field name="importe_iva">585.27</field>
+		<field name="importe_total">3372.27</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">8</field>
+		<field name="cliente_id">6</field>
+		<field name="fecha">2014-03-25</field>
+		<field name="importe_bruto">633.00</field>
+		<field name="importe_iva">132.93</field>
+		<field name="importe_total">765.93</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">9</field>
+		<field name="cliente_id">7</field>
+		<field name="fecha">2014-03-25</field>
+		<field name="importe_bruto">430.00</field>
+		<field name="importe_iva">90.30</field>
+		<field name="importe_total">520.30</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">10</field>
+		<field name="cliente_id">1</field>
+		<field name="fecha">2014-03-21</field>
+		<field name="importe_bruto">243.00</field>
+		<field name="importe_iva">51.30</field>
+		<field name="importe_total">294.03</field>
+		<field name="create_at">2023-03-07 12:09:08</field>
+		<field name="update_at">2023-03-07 12:09:08</field>
+	</row>
+	<row>
+		<field name="id">11</field>
+		<field name="cliente_id">9</field>
+		<field name="fecha">2019-12-01</field>
+		<field name="importe_bruto">93.37</field>
+		<field name="importe_iva">24.82</field>
+		<field name="importe_total">118.19</field>
+		<field name="create_at">2023-03-07 13:47:17</field>
+		<field name="update_at">2023-03-07 13:47:17</field>
+	</row>
+	<row>
+		<field name="id">12</field>
+		<field name="cliente_id">3</field>
+		<field name="fecha">0000-00-00</field>
+		<field name="importe_bruto">136.12</field>
+		<field name="importe_iva">28.59</field>
+		<field name="importe_total">164.71</field>
+		<field name="create_at">2023-03-16 08:16:31</field>
+		<field name="update_at">2023-03-16 08:16:31</field>
+	</row>
+	<row>
+		<field name="id">14</field>
+		<field name="cliente_id">3</field>
+		<field name="fecha">0000-00-00</field>
+		<field name="importe_bruto">136.12</field>
+		<field name="importe_iva">28.59</field>
+		<field name="importe_total">164.71</field>
+		<field name="create_at">2023-03-16 08:05:50</field>
+		<field name="update_at">2023-03-16 08:05:50</field>
+	</row>
+	</table_data>
+	<table_structure name="ventas_por_autor">
+		<field Field="id" Type="int(10) unsigned" Null="NO" Key="" Default="0" Extra="" Comment="" />
+		<field Field="autor" Type="varchar(40)" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="nacionalidad" Type="varchar(20)" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="uds_vendidas" Type="decimal(30,0)" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<field Field="importe_ventas_totales" Type="decimal(32,2)" Null="YES" Key="" Default="NULL" Extra="" Comment="" />
+		<options Name="ventas_por_autor" Comment="VIEW" />
+	</table_structure>
+</database>
+</mysqldump>
